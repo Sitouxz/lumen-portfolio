@@ -1,5 +1,5 @@
 'use client';
-import { Github, Mail, Instagram } from 'lucide-react';
+import { Github, Smartphone, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
@@ -11,12 +11,12 @@ const socials = [
     label: 'Instagram',
     handle: '@lumen_devteam'
   },
-  // {
-  //   icon: <Mail size={20} />,
-  //   href: 'mailto:lumen@unklab.ac.id',
-  //   label: 'Email',
-  //   handle: 'lumen@unklab.ac.id'
-  // },
+  {
+    icon: <Smartphone size={20} />,
+    href: 'https://wa.me/+6281284544008',
+    label: 'Contact Person',
+    handle: 'Reinaldy Rorimpandey'
+  },
   {
     icon: <Github size={20} />,
     href: 'https://github.com/lumenelit',
@@ -30,7 +30,7 @@ export default function Example() {
     <div className='bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0'>
       <Navigation />
       <div className='container flex items-center justify-center min-h-screen px-4 mx-auto'>
-        <div className='grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-2 lg:gap-16'>
+        <div className='grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16'>
           {socials.map((s) => (
             <Card>
               <Link
